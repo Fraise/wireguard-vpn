@@ -53,7 +53,7 @@ Add the following information to your *wg0.conf*:
 [Peer]
 PublicKey = <Server Public key>
 Endpoint = <Server Public IP>:51820
-AllowedIPs = 10.21.0.2/24
+AllowedIPs = 10.21.0.2/32
 ```
 
 ### Method 2
