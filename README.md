@@ -24,7 +24,7 @@ You can now start the Wireguard service with `wg-quick up wg0` and verify it's r
 
 **Optional** - You can enable your interface to automatically start on boot with `systemctl enable wg-quick@wg0`.
 
-Enable IP forwarding by adding or uncommenting the following line to */etc/sysctl.conf*
+Enable IP forwarding by adding or uncommenting the following line of */etc/sysctl.conf*:
 
 ```
 net.ipv4.ip_forward = 1
