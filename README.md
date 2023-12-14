@@ -42,8 +42,12 @@ Create a [client configuration](client.conf).
 
 You can either generate the clients private and public keys on your server then import them in your clients or do the opposite.
 
+## Add the client to your server
+
 To add the client connection to your server you can use two methods. Either you can add the client configuration to
 your server's *wg0.conf* or you can add it with a command.
+
+The `AllowedIPs` field determines which IPs will be routed to your peer.
 
 ### Method 1
 
@@ -51,8 +55,8 @@ Add the following information to your *wg0.conf*:
 
 ```
 [Peer]
-PublicKey = <Server Public key>
-Endpoint = <Server Public IP>:51820
+PublicKey = <Client Public key>
+Endpoint = <Client VPN network IP>:51820
 AllowedIPs = 10.21.0.2/32
 ```
 
